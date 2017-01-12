@@ -94,5 +94,5 @@
 
     //init on window loaded
     on(doc, "DOMContentLoaded", init)
-    on(doc, "load", init)
+    window.addEventListener("load", wthdfe, false);
 })(window, document)
