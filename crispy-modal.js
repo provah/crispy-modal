@@ -39,8 +39,6 @@
         overlay.setAttribute('style', 'position:fixed;top:0;bottom:0;left:0;right:0;opacity:0.3;width:100%;height:100%;background-color:black;');
         overlay_wrapper.appendChild(overlay);
         content_fixed.appendChild(popbox);
-        doc.body.appendChild(overlay_wrapper);
-        doc.body.appendChild(content_fixed);
         doc.getElementById('uglipop_overlay_wrapper').style.display = 'none';
         doc.getElementById('uglipop_overlay').style.display = 'none';
         doc.getElementById('uglipop_content_fixed').style.display = 'none';
@@ -95,4 +93,5 @@
     //init on window loaded
     on(doc, "DOMContentLoaded", init)
     window.addEventListener("load", wthdfe, false);
+    init();
 })(window, document)
