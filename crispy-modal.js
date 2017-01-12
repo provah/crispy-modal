@@ -21,7 +21,7 @@
     }
 
     function init() {
-        if initted
+        if (initted)
             return
 
         initted = true
